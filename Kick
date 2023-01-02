@@ -1,0 +1,4 @@
+for _,v in pairs(game.Players:GetPlayers()) do
+if v:IsA("Player") then
+v:Kick("for using something that got leaked to you bitch")
+end end
