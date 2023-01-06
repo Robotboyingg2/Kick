@@ -358,7 +358,7 @@ MovementSection:NewKeybind("Highjump", "Highjump", Enum.KeyCode.H, function()--s
     game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity1:Destroy()
 end)
 
-MovementSection:NewButton("PlayerTp", "PlayerTp, Enum.KeyCode.T, function()
+MovementSection:NewKeybind("PlayerTp", "PlayerTp, Enum.KeyCode.T, function()
 local Dist = math.huge 
 local Target = nil
 for i, v in pairs(game.Players:GetChildren()) do
